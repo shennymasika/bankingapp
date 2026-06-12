@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $conn->query("UPDATE users SET balance = balance - $amount WHERE id=$from_id");
 
         //add receiver
-        $conn->query("UPDATE users SET balance = balance + $amount WHERE username='to_user'");
+        $conn->query("UPDATE users SET balance = balance + $amount WHERE username='$to_user'");
 
         echo "Transfer successfull !";
     } else{
