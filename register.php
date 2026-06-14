@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     by separating SQL code from user input)*/
     $stmt = $conn->prepare("INSERT INTO users (username, first_name, last_name, email, password)VALUES (?,?,?,?,?)");
     /*Blind parameters to the prepared statement. The "sssss" string indicates that all five parameters are strings.*/
-    $stmt->bind_param("sssss",$firstName,$lastName,$email,$hashedPassword);
+    $stmt->bind_param("sssss", $username,$firstName,$lastName,$email,$hashedPassword);
     if ($stmt->execute()){
         $message = "✅ Registration successful!";
     }else{
