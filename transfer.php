@@ -28,8 +28,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     }
 ?>
-<form method="POST">
-    <input type="text" name="to_user" placeholder="Receiver Username"><br>
-    <input type="number" name="amount" placeholder="amount"><br>
-    <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankingapp - Transfer</title>
+    <link rel="stylesheet" href="styles/bankstyle.css">
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="to_user" placeholder="Receiver Username"><br>
+        <input type="number" name="amount" placeholder="amount"><br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

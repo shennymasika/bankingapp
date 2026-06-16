@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <head>
     <title>Banking System - Register</title>
+    <link rel="stylesheet" href="styles/bankstyle.css">
 </head>
 <body>
     <h2>Bank Account Registration</h2>
@@ -66,6 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <input type="password" name="password"><br><br>
 
         <button type="submit">Register</button>
-    </form>
+</form>
 </body>
 </html>

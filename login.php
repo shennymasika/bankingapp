@@ -19,9 +19,19 @@ if($_SERVER['REQUEST_METHOD'] =='POST'){
     }
 }
 ?>
-
-<form method = "POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankingapp - login</title>
+     <link rel="stylesheet" href="styles/bankstyle.css">
+</head>
+<body>
+ <form method = "POST">
     <input type="text" name="username" placeholder="Username"><br>
     <input type="password" name="password" placeholder="Password"><br>
     <button type="submit">login</button>
-</form>
+ </form>   
+</body>
+</html>
