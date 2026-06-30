@@ -1,6 +1,9 @@
 <?php
 //database connection
 require_once "config.php";
+include_once 'header.php';
+include_once 'bankappsidebar.php';
+
 
 $message = "";
 
@@ -47,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="styles/bankstyle.css">
 </head>
 <body>
-    <h2>Bank Account Registration</h2>
+    <!-- <h2>Bank Account Registration</h2> -->
     <p style="color:green;"><?php echo $message;?></p>
 
     <form method="POST" action="">

@@ -1,6 +1,9 @@
 <?php
 session_start();
-include 'config.php';
+include_once 'config.php';
+include_once 'header.php';
+include_once 'bankappsidebar.php';
+
 
 if($_SERVER['REQUEST_METHOD'] =='POST'){
     $username = $_POST['username'];

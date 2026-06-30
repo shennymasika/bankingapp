@@ -2,6 +2,8 @@
 session_start(); #start the sesson to access user data. This should be at the very top of
 #the file before any HTML or output sent to the browser.
 include 'config.php'; #check if user is logged in
+include_once 'header.php';
+include_once 'bankappsidebar.php';
 
 #if the request method is POST,it means the form has been submitted and we 
 #need to process the transfer
