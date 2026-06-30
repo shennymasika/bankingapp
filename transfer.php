@@ -2,8 +2,8 @@
 session_start(); #start the sesson to access user data. This should be at the very top of
 #the file before any HTML or output sent to the browser.
 include 'config.php'; #check if user is logged in
-include_once 'header.php';
-include_once 'bankappsidebar.php';
+include_once 'includes/header.php';
+include_once 'includes/bankappsidebar.php';
 
 #if the request method is POST,it means the form has been submitted and we 
 #need to process the transfer
@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "insufficient balance !";
     }
     }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,5 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="number" name="amount" placeholder="amount"><br>
         <button type="submit">Send</button>
     </form>
+    <?php
+    include_once 'includes/footer.php';
+    ?>
 </body>
 </html>

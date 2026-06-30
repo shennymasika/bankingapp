@@ -1,8 +1,8 @@
 <?php
 session_start();
 include_once 'config.php';
-include_once 'header.php';
-include_once 'bankappsidebar.php';
+include_once 'includes/header.php';
+include_once 'includes/bankappsidebar.php';
 
 
 if($_SERVER['REQUEST_METHOD'] =='POST'){
@@ -35,6 +35,9 @@ if($_SERVER['REQUEST_METHOD'] =='POST'){
     <input type="text" name="username" placeholder="Username"><br>
     <input type="password" name="password" placeholder="Password"><br>
     <button type="submit">login</button>
- </form>   
+ </form> 
+ <?php
+ include_once 'includes/footer.php';
+ ?>
 </body>
 </html>

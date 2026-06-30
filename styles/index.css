@@ -4,11 +4,11 @@ body{
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    /* overflow-x: hidden; */
 }
-
+/* .hero{
+    
+} */
 .navbar{
-    /* border: #94cebd solid; */
     border-radius: 15px;
     background: rgba(77, 106, 106, 0.733);
     color:rgb(8, 30, 24);
@@ -35,12 +35,6 @@ body{
     text-align:center;
     padding:100px 20px;
 
-}
-.coverpagecontent img{
-    /* background-size: cover;
-    background-position: center center; */
-    width: 100%;
-    height: 100vh;
 }
 .coverpagecontent h1{
     font-size: 5rem;

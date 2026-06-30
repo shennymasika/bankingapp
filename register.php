@@ -1,8 +1,8 @@
 <?php
 //database connection
 require_once "config.php";
-include_once 'header.php';
-include_once 'bankappsidebar.php';
+include_once 'includes/header.php';
+include_once 'includes/bankappsidebar.php';
 
 
 $message = "";
@@ -71,5 +71,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
         <button type="submit">Register</button>
 </form>
+<?php
+include_once 'includes/footer.php'
+?>
 </body>
 </html>
