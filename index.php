@@ -9,27 +9,25 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <section class="hero">
-        <header>
-            <nav class="navbar">
-                <h2>Monetary World Bank</h2>
-                <a href="#">Home</a> 
-                <a href="#">contacts</a>  
-                <a href="#">About</a>  
-                <a href="login.php" class="loginbtn">Login</a>
-            </nav> 
-        </header>
-        <!-- <section>
-            <img src="bankimages/banksidebar.jpg" alt="images">
-            <img src="bankimages/bankglassbuilding.jpg" alt="images">
-            <img src="bankimages/bankbuilding.jpg" alt="images">
-        </section> -->
-        <section>
-            <div class="coverpagecontent">
-                <h1>Start Your Banking Journey With Us.</h1>
-                <p>We are a new organisation thats aimed at secure banking without complications. We are not like the rest, we are different. Talk of the best interest rates, and well automated operations!</p>
-            </div>
-        </section>
+    <section class="background">
+        <div class="slideshow1"></div>
+        <div class="slideshow2"></div>
+        <div class="slideshow3"></div>
+    </section>
+    <header>
+        <nav class="navbar">
+            <h2>Monetary World Bank</h2>
+            <a href="#">Home</a> 
+            <a href="#">contacts</a> 
+            <a href="#">About</a>  
+            <a href="login.php" class="loginbtn">Login</a>
+        </nav> 
+    </header>
+    <section>
+        <div class="coverpagecontent">
+            <h1>Start Your Banking Journey With Us.</h1>
+            <p>We are a new organisation thats aimed at secure banking without complications. We are not like the rest, we are different. Talk of the best interest rates, and well automated operations!</p>
+        </div>
     </section>
     <section class="cards">
         <div class="card">
