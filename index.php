@@ -44,7 +44,7 @@
     <footer>
         <div class="footer-links">
             <h3>Contact Us:</h3>
-            <p><i class="fa-solid fa-map"></i> Mombasa, Kenya</p>
+            <p><i class="fa-solid fa-location-dot"></i> Mombasa, Kenya</p>
             <p><i class="fa-solid fa-address-card"></i> +254731003019</p>
             <p><i class="fa-solid fa-envelope"></i>monetarybank@gmail.com</p>
             <p class="copyright">
