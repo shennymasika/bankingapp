@@ -8,27 +8,8 @@ body{
 .background{
     overflow: hidden;
 }
-.slideshow1{
-    background: url("../bankimages/bankbuilding.jpg") repeat-x;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
-.slideshow2{
-    background: url("../bankimages/bankglassbuilding.jpg") repeat-x;
-    display: inline-block;
-    height: 100vh;
-    width: 50%;
-}
-.slideshow3{
-    background: url("../bankimages/banksidebar.jpg") repeat-x;
-    display: inline-block;
-    height: 100vh;
-    width: 50%;
-}
 .navbar{
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background: rgba(77, 106, 106, 0.733);
     color:rgb(8, 30, 24);
     padding:10px 10px;
@@ -49,10 +30,13 @@ body{
     background: #172722;
 }
 .coverpagecontent{
+    background-image: url("../bankimages/bankbuilding.jpg");
+    background-size: cover;
     height: 300px;
     color:white;
     text-align:center;
     padding:100px 20px;
+    transition: opacity 0.5s ease;
 
 }
 .coverpagecontent h1{
@@ -65,9 +49,26 @@ body{
     font-size: x-large;
     text-align: left;
 }
-/* .coverpage{
-    width: 100%;
-    height: 100vh;
+/* .slideshow1{
+    background-image: url("../bankimages/bankbuilding.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: left;
+}
+.slideshow2{
+    background: url("../bankimages/bankglassbuilding.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: left;
+}
+.slideshow3{
+    background: url("../bankimages/banksidebar.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: left;
 } */
 .loginbtn{
     margin: 0 0 0 300px;
