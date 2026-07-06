@@ -31,3 +31,12 @@ account_typeID int not null,
 date_created timestamp DEFAULT CURRENT_TIMESTAMP,
 FOREIGN KEY (account_typeID) REFERENCES account_type(id)
 );
+
+CREATE TABLE transaction(
+transaction_id INT AUTO_INCREMENT primary key,
+account_id INT not null,
+transaction_type ENUM('Deposit','Withdrawal','Transfer'),
+amount DECIMAL(12,2) not null,
+description VARCHAR(255),
+transaction_date timestamp DEFAULT CURRENT_TIMESTAMP,
+);

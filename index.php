@@ -58,7 +58,7 @@
             var images = [
                 'bankimages/bankbuilding.jpg',
                 'bankimages/bankglassbuilding.jpg',
-                'bankimages/banksidebar.jpg'
+                'bankimages/creditcard.jpg'
             ];
             var nextimage = 0;
             var el = document.querySelector('.coverpagecontent');
