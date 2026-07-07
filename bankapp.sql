@@ -40,3 +40,11 @@ amount DECIMAL(12,2) not null,
 description VARCHAR(255),
 transaction_date timestamp DEFAULT CURRENT_TIMESTAMP,
 );
+
+CREATE TABLE beneficiaries(
+beneficiary_id int AUTO_INCREMENT primary key,
+user_id int not null,
+beneficiary_name VARCHAR(100),
+beneficiary_account VARCHAR(20),
+FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
