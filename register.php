@@ -18,6 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //validation that all fields are filled out before completeing registration
 
+    $db = new Database();
+$conn = $db->connect();
+
     if (empty($username) || empty($firstName) || empty($lastName) || empty($email) || empty($password)){
         $message = "All fields are required!";
     } else{

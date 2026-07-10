@@ -13,6 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $amount = $_POST['amount'];
     $from_id = $_SESSION['user_id'];
 
+$db = new Database();
+$conn = $db->connect();
+
     //get sender balance
     $sender = $conn->query("SELECT * FROM users WHERE id=$from_id")->fetch_assoc();
 

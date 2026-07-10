@@ -14,6 +14,10 @@ if(!isset($_SESSION['user_id'])) {#if user_id is not set in the session,
 $user_id = $_SESSION['user_id'];
 # Execute a SQL query te select all columns from the 'users' table where the 'id'
 #matches the user ID from the session.
+
+$db = new Database();
+$conn = $db->connect();
+
 $result = $conn->query("SELECT * FROM users WHERE id=$user_id");
 #Fetch the result as an associative array and store it in the $user
 #variable for later use in displaying user information on the dashboard.
