@@ -9,6 +9,11 @@ if($_SERVER['REQUEST_METHOD'] =='POST'){
     $username = $_POST['username'];
     $password = md5($_POST['password']);
 
+
+#database object
+    $db = new Database();
+    $conn = $db->connect();
+
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
 
