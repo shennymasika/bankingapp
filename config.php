@@ -12,7 +12,7 @@ class Database{
 
     public $conn;
 
-    public function connect(){
+    public function connect(){          
         $this->conn = new mysqli(
             $this->host,
             $this->username,
@@ -21,6 +21,9 @@ class Database{
         );
 
         return $this->conn;
+    }
+    public function __destruct(){
+        $this->conn = null;
     }
 }
 
