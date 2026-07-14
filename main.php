@@ -1,10 +1,10 @@
 <?php
-require 'Database.php';
-require 'User.php';
-require 'Account.php';
-require 'SavingsAccount.php';
-require 'CurrentAccount.php';
-require 'Transaction.php';
+require_once 'config.php';
+require_once 'user.php';
+require_once 'account.php';
+// require_once 'SavingsAccount.php';
+// require_once 'CurrentAccount.php';
+require_once 'transaction.php';
 
 $db = new Database();    // constructor opens PDO (PHP Data Objects (PDO) connection
 $conn = $db->conn;

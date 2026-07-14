@@ -3,6 +3,9 @@ session_start(); #start the session to access the user data. This should be at t
 #of the file before any HTML or output is sent to the browser.
 
 include 'config.php'; #checks if user is logged in
+// include_once 'deposit.php';
+include_once '<includes/header.php';
+
 
 if(!isset($_SESSION['user_id'])) {#if user_id is not set in the session, 
 #it means the user is not logged in.
@@ -28,8 +31,8 @@ $user = $result->fetch_assoc();
 <!-- displays a welcome message with the users username, which is 
 retrieved from the $user associative array. The balance is displayed within a <p>
 HTML tag and formatted as currency within a dollar sign -->
-<p>Balance: $<?php echo $user['balance'];?></p>
-<p>Balance: $<?php echo $user['balance']; ?></p> <!--
+
+ <!--
 Display the user's current balance, which is also retrieved from the $user associative array.
 The balance is displayed within a <p> HTML tag and formatted as currency with a dollar sign.-->
 
@@ -40,6 +43,8 @@ where the user can initiate a money transfer.
 The link is created using an <a> HTML tag, and it points to 'logout.php', 
 which will handle the logout process by destroying the session 
 and redirecting the user to the login page.-->
+<a href="deposit.php">Deposit</a>
+
  
 
    

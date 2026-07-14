@@ -13,24 +13,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $amount = $_POST['amount'];
     $from_id = $_SESSION['user_id'];
 
-$db = new Database();
-$conn = $db->connect();
+    $db = new Database();
+    $conn = $db->connect();
 
     //get sender balance
     $sender = $conn->query("SELECT * FROM users WHERE id=$from_id")->fetch_assoc();
 
-    if ($sender['balance'] >= $amount) {
+    // if ($sender['balance'] >= $amount) {
 
-        //Deduct sender
-        $conn->query("UPDATE users SET balance = balance - $amount WHERE id=$from_id");
+    //     //Deduct sender
+    //     $conn->query("UPDATE users SET balance = balance - $amount WHERE id=$from_id");
 
-        //add receiver
-        $conn->query("UPDATE users SET balance = balance + $amount WHERE username='$to_user'");
+    //     //add receiver
+    //     $conn->query("UPDATE users SET balance = balance + $amount WHERE username='$to_user'");
 
-        echo "Transfer successfull !";
-    } else{
-        echo "insufficient balance !";
-    }
+    //     echo "Transfer successfull !";
+    // } else{
+    //     echo "insufficient balance !";
+    // }
     }
     
 ?>

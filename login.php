@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once 'config.php';
+require_once 'user.php';
 include_once 'includes/header.php';
 include_once 'includes/bankappsidebar.php';
 
