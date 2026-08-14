@@ -12,9 +12,9 @@
     <header>
         <nav class="navbar">
             <h2>Monetary World Bank</h2>
-            <a href="#">Home</a> 
-            <a href="#">contacts</a>  
-            <a href="#">About</a>  
+            <a href="index.php#Home">Home</a> 
+            <a href="index.php#Contacts">Contacts</a>  
+            <a href="index.php#About">About</a>  
             <a href="login.php" class="loginbtn">Login</a>
         </nav> 
     </header>

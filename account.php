@@ -1,9 +1,10 @@
+<!-- account.php -->
 <?php
 abstract class Account {
     protected $id;
     protected $accountNumber;
     protected $userId;
-    private $balance;
+    protected $balance;
     const STATUS_ACTIVE = 'active';
 
     public function __construct($accountNumber, $userId, $balance = 0.00) {

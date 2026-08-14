@@ -14,10 +14,11 @@ body{
     color:rgb(8, 30, 24);
     padding:10px 10px;
     position: relative;
+    /* width: 100%; */
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    gap:50px;
+    gap:10px;
 }
 .navbar a{
     text-decoration: none;
@@ -33,6 +34,7 @@ body{
     background-image: url("../bankimages/bankbuilding.jpg");
     background-size: cover;
     height: 300px;
+    /* width: 100%; */
     color:white;
     text-align:center;
     padding:100px 20px;
@@ -71,13 +73,21 @@ body{
     text-align: left;
 } */
 .loginbtn{
-    margin: 0 0 0 300px;
+    margin: 0 0 0 350px;
     padding:10px 20px;
     text-decoration:none;
     border-radius:10px;
     background:#036b45;
     color:white;
     /* transition: transform 0.3s ease-out; */
+}
+.registerbtn{
+    /* margin: 0 0 0 350px; */
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:10px;
+    background:#036b45;
+    color:white;
 }
 .loginbtn:hover{
     background-color: #00a86b;

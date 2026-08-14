@@ -10,24 +10,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
      <!-- <script src="https://fontawesome.com" crossorigin="anonymous"></script> -->
 </head>
-<body>
+<body id="home">
     <header>
         <nav class="navbar">
             <h2>Monetary World Bank</h2>
-            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#"><i class="fa-solid fa-address-card"></i> contacts</a> 
-            <a href="#"><i class="fa-solid fa-book"></i>About</a>  
+            <a href="#Home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#Contacts"><i class="fa-solid fa-address-card"></i> Contacts</a> 
+            <a href="#About"><i class="fa-solid fa-book"></i>About</a>  
             <a href="login.php" class="loginbtn">Login</a>
+            <a href="register.php" class="registerbtn">Register</a>
         </nav> 
     </header>
-    <section class="coverpagecontent">
+    <section id="About" class="coverpagecontent">
             <!-- <div class="slideshow1"></div>
             <div class="slideshow2"></div>
             <div class="slideshow3"></div> -->
             <h1>Start Your Banking Journey With Us.</h1>
             <p>We are a new organisation thats aimed at secure banking without complications. We are not like the rest, we are different. Talk of the best interest rates, and well automated operations!</p>
     </section>
-    <section class="cards">
+    <section  class="cards">
         <div class="card">
             <h3>Secure Banking</h3>
             <p>Your funds are protected by modern security technology.</p>
@@ -42,7 +43,7 @@
         </div>
     </section> 
     <footer>
-        <div class="footer-links">
+        <div id="Contacts" class="footer-links">
             <h3>Contact Us:</h3>
             <p><i class="fa-solid fa-location-dot"></i> Mombasa, Kenya</p>
             <p><i class="fa-solid fa-address-card"></i> +254731003019</p>
